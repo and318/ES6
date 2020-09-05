@@ -1,12 +1,13 @@
 const moment = require('moment');
-console.log(moment().format("DD MM YYYY"));
+//console.log(moment().format("DD MM YYYY"));
 
 const saludo = "Hola mundo con webpack";
-console.log(saludo);
+//console.log(saludo);
 
 const saludo2 = () => {
     alert("Saludo en alert");
 }
-saludo2()
+//saludo2()
 
-
+//import "./recursivas";
+import "./let_var"

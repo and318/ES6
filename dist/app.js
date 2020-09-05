@@ -1586,10 +1586,22 @@ eval("module.exports = function(module) {\n\tif (!module.webpackPolyfill) {\n\t\
 /*!**********************!*\
   !*** ./src/index.js ***!
   \**********************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-eval("var moment = __webpack_require__(/*! moment */ \"./node_modules/moment/moment.js\");\n\nconsole.log(moment().format(\"DD MM YYYY\"));\nvar saludo = \"Hola mundo con webpack\";\nconsole.log(saludo);\n\nvar saludo2 = function saludo2() {\n  alert(\"Saludo en alert\");\n};\n\nsaludo2();\n\n//# sourceURL=webpack:///./src/index.js?");
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _let_var__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./let_var */ \"./src/let_var.js\");\n/* harmony import */ var _let_var__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_let_var__WEBPACK_IMPORTED_MODULE_0__);\nvar moment = __webpack_require__(/*! moment */ \"./node_modules/moment/moment.js\"); //console.log(moment().format(\"DD MM YYYY\"));\n\n\nvar saludo = \"Hola mundo con webpack\"; //console.log(saludo);\n\nvar saludo2 = function saludo2() {\n  alert(\"Saludo en alert\");\n}; //saludo2()\n//import \"./recursivas\";\n\n\n\n\n//# sourceURL=webpack:///./src/index.js?");
+
+/***/ }),
+
+/***/ "./src/let_var.js":
+/*!************************!*\
+  !*** ./src/let_var.js ***!
+  \************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("function testVar() {\n  console.log(x);\n  var x = 2;\n  console.log(\"testVar=>\", x);\n}\n\ntestVar();\n\n//# sourceURL=webpack:///./src/let_var.js?");
 
 /***/ })
 
